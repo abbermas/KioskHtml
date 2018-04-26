@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Prison Kiosk</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/custom.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+  <div class="top-area">
+    <div class="container visible-md visible-lg">
+        <div class="row">
+          <div class="col-md-6">
+            <i class="fa fa-calendar fa-2x"></i> الاثنين / 30 / رجب / 1439 هـ  |  16 أبريل 2018
+        </div>
+          <div class="col-md-6 text-right">
+            <marquee scroll="right" style="width:94%;">السعودية للكهرباء» تدعو مُشتركيها لتحديث بياناتهم</marquee>
+            <i class="fa fa-home fa-2x"></i>
+
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="header-area">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 visible-md visible-lg"><img class="logo-size-2030" src="utilities/ksa-2030.png"></div>
+          <div class="col-md-4 text-center">
+            <a href="index.html">
+              <img class="logo-size-pri" src="utilities/logo-Prison.png">
+            </a>
+          </div>
+          <div class="col-md-4 visible-md visible-lg"><img class="logo-size-gid" src="utilities/logo-Gid.png"></div>
+        </div>
+    </div>
+  </div>
+
+<!-- Site wrapper -->
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 flex-area">
+        <div class="col-md-10">
+          <div class="bg-green-area-2 bg-green text-right">
+          <div class="col-md-12">
+              <div class="col-md-5">
+                <div class="title-icon-text-1">
+                رقم الهوية : 1234567890
+              </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title-icon-text-1">
+                  عامر سعيد حسن العمر
+                </div>
+              </div>
+              <div class="col-md-1"><img src="utilities/pix-sample.png"></div>
+            </div>
+            <div class="col-md-12"><hr></div>
+            <div class="col-md-12">
+                <div class="form-group">
+                  <div class="radio radio-right">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      طلب
+                    </label>
+
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      شكوى
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-4 padding-0 bg-white-area">
+                  <select class="form-control" style="border:0">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 1" selected>Option 1</option>
+                  </select>
+                </div>
+
+                <div class="col-md-8 padding-right-none">
+                  <input class="form-control text-right" type="text" placeholder="موضوع الطلب">
+                </div>
+            </div>
+
+            <div class="col-md-12 padding-top-one">
+              <textarea class="form-control text-right" rows="3" placeholder="محتوى الطلب"></textarea>
+            </div>
+
+            <div class="col-md-12 padding-top-one">
+              <a href="oldrequest.html" class="button-enter">إرسال الطلب <i class="fa fa-envelope-o fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="col-md-12">
+
+<button type="button" class="new-request-button-record text-white" data-toggle="modal" data-target="#modal-record">
+                <img src="utilities/icon-Record.png">
+                <br>
+              تسجيل<br>
+    صوتي
+              </button>
+
+          </div>
+
+          <div class="col-md-12 padding-top-one">
+
+<button type="button" class="new-request-button-attached text-white" data-toggle="modal" data-target="#modal-attached">
+                <img src="utilities/icon-Attached.png">
+                <br>
+              مسح وتحميل<br>
+    مرفقات
+              </button>
+
+          </div>
+        </div>
+
+<!--modal codes-->
+<div class="modal fade" id="modal-record" style="display: none;">
+          <div class="modal-dialog" style="width: 72%; left: -7.9em; top:13.2em">
+            <div class="modal-content modal-bg">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title text-center">
+                  <img src="utilities/icon-Record.png">
+                </h4>
+              </div>
+              <div class="modal-body text-center">
+                <img src="utilities/pix-voicerecord.png">
+              </div>
+              <div class="modal-footer">
+                <div class="col-md-12">
+                  <div class="col-md-offset-3">
+                  <div class="col-md-4">
+                      <a href="#" class="button-enter"> <i class="fa fa-check fa-2x"></i></a>
+                  </div>
+                  <div class="col-md-4">
+                      <a href="#" class="button-close" data-dismiss="modal" > <i class="fa fa-close fa-2x"></i></a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+
+        <div class="modal fade" id="modal-attached" style="display: none;">
+                  <div class="modal-dialog" style="width: 72%; left: -7.9em; top:13.2em;">
+                    <div class="modal-content modal-bg">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title text-center">
+                          <img src="utilities/icon-Attached.png">
+                        </h4>
+                      </div>
+                      <div class="modal-body text-center">
+
+                        <div class="input-group scan-input-group">
+                          <input type="text" class="form-control scan-input-text">
+                          <span class="input-group-addon"><a href="scan1.html"><i class="fa fa-file-text fa-2x"></i></a></span>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <div class="col-md-12">
+                          <div class="col-md-offset-3">
+                          <div class="col-md-4">
+                              <a href="#" class="button-enter"> <i class="fa fa-check fa-2x"></i></a>
+                          </div>
+                          <div class="col-md-4">
+                              <a href="#" class="button-close" data-dismiss="modal" > <i class="fa fa-close fa-2x"></i></a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+<!--end modal codes-->
+    </div>
+
+
+  </div>
+</div>
+</div>
+
+<div class="footer-area">
+  <div class="container">
+  جميع الحقوق محفوظة © 2018
+</div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</div>
+</body>
+</html>
